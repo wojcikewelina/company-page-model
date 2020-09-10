@@ -6,7 +6,7 @@ class AboutView extends Component {
   
     return (
       <div>
-       lorem
+       nanan
       </div>
     );
   }

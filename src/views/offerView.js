@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class OffersView extends Component {
+class OfferView extends Component {
   
   render() {
   
@@ -12,4 +12,4 @@ class OffersView extends Component {
   }
 }
 
-export default OffersView;
+export default OfferView;

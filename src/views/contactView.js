@@ -6,7 +6,7 @@ class ContactView extends Component {
   
     return (
       <div>
-       lorem
+       ipsum
       </div>
     );
   }

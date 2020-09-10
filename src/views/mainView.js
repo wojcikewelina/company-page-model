@@ -6,7 +6,7 @@ class MainView extends Component {
   
     return (
       <div>
-       lorem
+   Strona główna
       </div>
     );
   }

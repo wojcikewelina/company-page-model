@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class Header extends Component {
   componentDidMount() {}
@@ -8,10 +9,15 @@ class Header extends Component {
       <header>
         <nav>
           <ul>
-          <li>O firmie</li>
-          <li>Oferta</li>
-          <li>Realizacjie</li>
-          <li>Kontakt</li>
+            <Link to="/about">
+              <li>O firmie</li>
+            </Link>
+            <Link to="/offer">
+              <li>Oferta</li>
+            </Link>
+                       <Link to="/contact">
+              <li>Kontakt</li>
+            </Link>
           </ul>
         </nav>
       </header>
