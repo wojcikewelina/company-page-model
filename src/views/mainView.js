@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+
 class MainView extends Component {
   
   render() {
@@ -7,6 +8,16 @@ class MainView extends Component {
     return (
       <div>
    Strona główna
+
+   n
+   n
+   n
+   n
+   n
+   n
+   n
+   n
+   
       </div>
     );
   }

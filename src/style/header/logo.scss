@@ -1,0 +1,18 @@
+.logo{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 70px;
+  height: 70px;
+
+  clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+
+  background-color: darkgrey;
+  color: white;
+ 
+
+-webkit-box-shadow: 2px 2px 3px 3px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 2px 3px 3px rgba(0,0,0,0.75);
+box-shadow: 2px 2px 3px 3px rgba(0,0,0,0.75);
+}

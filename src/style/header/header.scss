@@ -1,0 +1,33 @@
+@mixin header-size{
+  width: 100%;
+  height: 100px;
+  padding: 1rem;
+}
+
+header{
+  @include header-size;
+  position: fixed;
+  top: 0;
+  left:0;
+
+  display: flex;
+  justify-content: space-between;
+  background-color: lightgrey;
+
+nav{
+
+   
+  ul{
+    margin-right: 2rem;
+    display: flex;
+    list-style: none;
+    li{
+      margin: 10px;
+    }
+  }
+}
+}
+
+.under-header{
+  @include header-size;
+}
