@@ -1,33 +1,52 @@
-@mixin header-size{
-  width: 100%;
-  height: 100px;
-  padding: 1rem;
+@mixin header-size {
+    width: 100%;
+    height: 100px;
+    padding: 1rem;
 }
 
-header{
-  @include header-size;
-  position: fixed;
-  top: 0;
-  left:0;
+header {
+    @include header-size;
+    position: fixed;
+    top: 0;
+    left: 0;
 
-  display: flex;
-  justify-content: space-between;
-  background-color: lightgrey;
-
-nav{
-
-   
-  ul{
-    margin-right: 2rem;
     display: flex;
-    list-style: none;
-    li{
-      margin: 10px;
+    justify-content: space-between;
+    align-items:center;
+    background-color: lightgrey;
+
+    nav {
+        ul {
+            margin-right: 2rem;
+            display: flex;
+            list-style: none;
+            a {
+                text-decoration: none;
+                color: black;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+            }
+            li {
+              width: 90px;
+              height: 20px;
+                padding: 5px;
+                margin: 5px;
+            }
+        }
     }
-  }
-}
 }
 
-.under-header{
-  @include header-size;
+li:hover{
+  font-weight: 500;
+  font-size: large;
+  -webkit-transition: all 0.4s 0s ease;
+-moz-transition: all 0.3s 0s ease;
+-o-transition: all 0.3s 0s ease;
+transition: all 0.3s 0s ease;
+}
+
+
+.under-header {
+    @include header-size;
 }
