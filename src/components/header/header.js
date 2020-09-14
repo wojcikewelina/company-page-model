@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Logo from "./logo";
 import "../../style/header/header";
 
@@ -8,23 +8,52 @@ class Header extends Component {
     return (
       <div>
         <header>
-          <Logo />
+          <NavLink exact to="/">
+            <Logo />
+          </NavLink>
           <nav>
-            <ul>
-              <Link to="/about">
-                <li>O firmie</li>
-              </Link>
-              <Link to="/offer">
-                <li>Oferta</li>
-              </Link>
-              <Link to="/realisations">
-                <li>Realizacje</li>
-              </Link>
-              <Link to="/contact">
-                <li>Kontakt</li>
-              </Link>
+            <ul className="nav-links">
+              <li>
+                <NavLink
+                  className="main-nav"
+                  activeClassName="main-nav-active"
+                  exact
+                  to="/"
+                >
+                  Home{" "}
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  className="main-nav"
+                  activeClassName="main-nav-active"
+                  exact
+                  to="/about"
+                >
+                  About
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  className="main-nav"
+                  activeClassName="main-nav-active"
+                  exact
+                  to="/realisations"
+                >
+                  Realizacje{" "}
+                </NavLink>
+              </li>
             </ul>
           </nav>
+
+          <NavLink
+            className="main-nav"
+            activeClassName="main-nav-active"
+            exact
+            to="/contact"
+          >
+            <button className="nav-contact-button">Contact</button>
+          </NavLink>
         </header>
         <div className="under-header" />
       </div>

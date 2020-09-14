@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import "./style.css"
 
+
 import Header from "./components/header/header";
 import MainView from "./views/mainView"
 import AboutView from "./views/aboutView"
