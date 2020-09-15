@@ -9,7 +9,7 @@ class MainView extends Component {
         <div className="paralax-image" ></div>
         <p>LOREM</p>
         <div className="paralax-image" ></div>
-        <article>nnnananan</article>
+        <article>lorem ipsum</article>
       </div>
     );
   }
