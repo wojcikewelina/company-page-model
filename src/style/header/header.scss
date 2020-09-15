@@ -6,11 +6,15 @@ header * {
 
 header {
   position: fixed;
+  left:0;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px 10%;
   width: 80%;
+  height: 130px;
+  background-color: #161718;
 
   .logo {
     cursor: pointer;

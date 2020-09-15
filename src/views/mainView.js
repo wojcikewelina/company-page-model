@@ -1,23 +1,15 @@
 import React, { Component } from "react";
 
+import "../style/views/mainView.scss";
 
 class MainView extends Component {
-  
   render() {
-  
     return (
-      <div>
-   Strona główna
-
-   n
-   n
-   n
-   n
-   n
-   n
-   n
-   n
-   
+      <div className="main-view">
+        <div className="paralax-image" ></div>
+        <p>LOREM</p>
+        <div className="paralax-image" ></div>
+        <article>nnnananan</article>
       </div>
     );
   }
