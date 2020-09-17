@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import BasicDescriptionElement from "./basicDescriptionElement";
 
+import "../../style/views/mainView/basicDescriptionSection"
+
 import { getData } from "../../service/mv_basicDescription";
 
 export default class BasicDescriptionSection extends Component {
@@ -12,21 +14,30 @@ export default class BasicDescriptionSection extends Component {
   }
 
   componentDidMount() {
-    getData()
-      .then(result => {
-        this.setState({
-          allData: result
-        });
-      })
+    getData().then(result => {
+      this.setState({
+        allData: result
+      });
+    });
   }
 
 
-
   render() {
+   const allElements = this.state.allData.map((element, i) => {
     return (
       <div>
-        Tu będzie troszkę kontentu
-        <BasicDescriptionElement />
+        <BasicDescriptionElement
+          src={element.src}
+          title={element.title}
+          text={element.text}
+          key={"el"+i}
+        />
+      </div>
+    );
+  });
+    return (
+      <div class="basic-description-section">
+        {allElements}
       </div>
     );
   }

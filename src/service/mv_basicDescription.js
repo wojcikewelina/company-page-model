@@ -16,7 +16,7 @@ let data = [
   }
 ];
 
-export function getData() {
+export function getData() { 
   const promise = new Promise((resolve, rejected) => {
     resolve(data);
     rejected(()=>{console.log("Bład, nie wczytało jsona")})

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import "../style/views/mainView.scss";
+import "../style/views/mainView/mainView.scss";
 import BasicDescriptionSection from "../components/mainView/basicDescriptionSection"
 
 class MainView extends Component {
@@ -8,7 +8,7 @@ class MainView extends Component {
     return (
       <div className="main-view">
         <div className="paralax-image" ></div>
-        <p>LOREM</p>
+        <p id="startPictureText">LOREM</p>
         <div className="paralax-image" ></div>
         <BasicDescriptionSection/>
 
