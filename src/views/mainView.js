@@ -11,7 +11,7 @@ class MainView extends Component {
         <p id="startPictureText">LOREM</p>
         <div className="paralax-image" ></div>
         <BasicDescriptionSection/>
-
+<div className="test">test</div>
 
       </div>
     );
