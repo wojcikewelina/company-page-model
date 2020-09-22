@@ -36,7 +36,7 @@ export default class BasicDescriptionSection extends Component {
     );
   });
     return (
-      <div class="basic-description-section">
+      <div className="basic-description-section">
         {allElements}
       </div>
     );
