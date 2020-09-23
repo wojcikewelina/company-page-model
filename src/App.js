@@ -8,6 +8,7 @@ import MainView from "./views/mainView";
 import AboutView from "./views/aboutView";
 import OfferView from "./views/offerView";
 import ContactView from "./views/contactView";
+import Footer from "./components/footer";
 import RealisationsView from "./views/realisationsView";
 
 export default function App() {
@@ -24,6 +25,7 @@ export default function App() {
             <Route path="/realisations" component={RealisationsView} />
           </Switch>
         </div>
+        <Footer />
       </BrowserRouter>
     </div>
   );
